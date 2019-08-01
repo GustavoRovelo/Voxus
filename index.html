@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Voxus - Teste FrontEnd</title>
+	<meta name="author" content="Gustavo Rovelo">
+	<meta name="keywords" content="FrontEnd">
+	<meta name="description" content="Teste vaga FrontEnd Voxus">
+	
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- JQuery CDN -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+	<!-- Materialize CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Jquery Mask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha256-Kg2zTcFO9LXOc7IwcBx1YeUBJmekycsnTsq2RuFHSZU=" crossorigin="anonymous"></script>
+
+    <!-- Jquery Validate -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+
+    <!-- Fonts Google -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+
+    <!-- Assets Custom -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <script src="assets/js/main.min.js"></script>
+
+</head>
+<body>
+	<header class="container-fluid header">
+		<div class="h-100 row">
+			<div class="container">
+				<div class="h-100 row">
+					<div class="align-items-center col-12 d-flex">
+						<a class="logo" href="#!">
+							<img src="assets/img/logo.svg">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-8 mx-auto content">
+				<div class="row">
+					<div class="col-12 col-md-10 mx-auto text-center title">
+						<h1>Você está a poucos passos de otimizar suas campanhas!</h1>
+					</div>
+					<div class="col-12 col-md-10 mx-auto text-center subtitle">
+						<p>Queremos conhecer mais sobre sua empresa para melhorar sua experiência com a Voxus.</p>
+					</div>
+					<div class="col-11 col-md-10 mx-auto form">
+						<div class="row">
+							<form class="col-12 col-md-6 mx-auto form-content">
+								<div class="row">
+									<div class="col-12 px-0 input-field">
+										<input id="name" type="text" class="validate" required>
+							          	<label for="name">Nome</label>
+							          	<span class="helper-text" data-error="Este campo é obrigatório!"></span>
+									</div>
+									<div class="col-2 pl-0 input-field country">
+										<select required>
+											<option value="55" data-icon="assets/img/br.svg" selected>+55</option>
+											<option value="33" data-icon="assets/img/other.svg">+33</option>
+										</select>
+									</div>
+									<div class="col-10 px-0 input-field">
+										<input id="tel" type="text" class="validate sp_celphones" required>
+							          	<label for="tel">Telefone</label>
+							          	<span class="helper-text" data-error="Telefone inválido."></span>
+									</div>
+									<div class="col-12 px-0 input-field">
+										<input id="email" type="email" class="validate" required>
+							          	<label for="email">Email</label>
+							          	<span class="helper-text" data-error="E-mail inválido."></span>
+									</div>
+									<div class="col-12 px-0 input-field">
+										<input id="enterprise_name" type="text" class="validate" required>
+							          	<label for="enterprise_name">Nome da empresa</label>
+							          	<span class="helper-text" data-error="Este campo é obrigatório!"></span>
+									</div>
+									<div class="col-12 px-0 input-field">
+										<input id="url" type="url" class="validate" required>
+							          	<label for="url">URL do site</label>
+							          	<span class="helper-text" data-error="Domínio inválido."></span>
+									</div>
+									<div class="col-12 px-0 input-field">
+										<select required>
+											<option value="" disabled selected>Verba mensal em mídia</option>
+											<option value="<= R$5.000"><= R$5.000</option>
+											<option value=">= R$5.001 e <= R$30.000">>= R$5.001 e <= R$30.000</option>
+											<option value=">= R$30.001 e <= R$100.000">>= R$30.001 e <= R$100.000</option>
+											<option value=">= R$100.001 e <= R$500.000">>= R$100.001 e <= R$500.000</option>
+											<option value=">= R$500.001">>= R$500.001</option>
+											<option value="Não se aplica">Não se aplica</option>
+										</select>
+									</div>
+									<div class="col-11 px-0 mx-auto submit">
+										<input class="try" type="submit" value="Experimentar gratuitamente">
+										<input class="thanks" value="Obrigado">
+									</div>
+									<div class="col-12 px-0 contact">
+										<p>Entraremos em contato em até 24hs úteis.</p>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-12 col-md-10 d-md-block d-none mx-auto text-center help-text">
+						<p>*Para usar o trial grátis você precisa ser um e-commerce e concordar com os termos e requisitos do trial gratuito. Saiba mais em: <a href="#!">Termos e requisitos de trial gratuito</a></p>
+					</div>
+				</div>
+			</div>
+			<footer class="align-items-md-center col-12 d-flex flex-column flex-md-row footer">
+				<a class="link" href="#!">
+					<img src="assets/img/logo-footer.svg">
+				</a>
+				<a class="link" href="#!">
+					Termos de serviço
+				</a>
+				<a class="link" href="#!">
+					Política de privacidade
+				</a>
+				<a class="link" href="#!">
+					Opções de anúncio
+				</a>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>
